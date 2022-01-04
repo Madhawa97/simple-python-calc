@@ -10,7 +10,8 @@ def mul(n, m):
     return n*m
 
 def div(n, m):
-    return n/m
+    x = float(n)/float(m)
+    return x
 
 def fac(n):
     if n < 0:
