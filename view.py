@@ -1,10 +1,14 @@
-def ask1():
+def ask1(op):
     n1 = int(input("Enter a number : "))
+    print(f"\nAnswer for : {op} of {n1} = ", end=' ')
+
     return n1
 
-def ask2():
+def ask2(op):
     n1 = int(input("Enter first number : "))
     n2 = int(input("Enter second number : "))
+    print(f"\nAnswer for : {n1} {op} {n2} = ", end=' ')
+
     return n1, n2
 
 def pref():
@@ -17,8 +21,9 @@ def pref():
     return choice
 
 def answer(ans):
-    final = "\n" + "Answer is : " + str(ans) + "\n" + "-"*41 + "\n\n"
-    print(final)
+    #final = "\n" + "Answer is : " + str(ans) + "\n" + "-"*41 + "\n\n"
+    final_ans = str(ans) + "\n" + "-"*41 + "\n\n"
+    print(final_ans)
 
 def saybye():
     print("\nBye...")
